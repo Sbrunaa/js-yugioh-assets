@@ -10,6 +10,8 @@
     <!-- framework-->
     <link rel="stylesheet" href="./src/styles/buttons.css">
     <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
     <!--css main-->
     <link rel="stylesheet" href="./src/styles/main.css">
     <!--fonts-->
@@ -21,6 +23,9 @@
 </head>
 
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="./src/assets/video/yugi.mp4" type="video/mp4">
@@ -50,7 +55,7 @@
 
                 <div class="card-box framed" id="computer-cards"></div>
 
-                <div class="card-versus__container">
+                <div class="card-versus__container ">
 
                     <div class="versus-top">
                         <div class="card-infield">
@@ -65,7 +70,7 @@
 
                     </div>
                     <div class="versus-bottom">
-                        <button id="next-duel" class="rpgui-button" oncanplay="resertDuel()">Ganhou!</button>
+                        <button id="next-duel" class="rpgui-button" oncanplay="resertDuel()"></button>
                     </div>
                 </div>
 
